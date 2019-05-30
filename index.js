@@ -27,9 +27,9 @@ top.stdout.on('data', (data) => {
 });
 
 top.stderr.on('data', (data) => {
-  console.log(`--------ERROR!!!-------------`);
-  console.log(`stderr: ${data}`);
-  console.log(`--------ERROR!!!-------------`);
+  console.log(`--------ERROR--------`);
+  console.log(data);
+  console.log(`--------ERROR--------`);
 });
 
 top.on('close', (code) => {
